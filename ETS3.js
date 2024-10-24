@@ -16,33 +16,33 @@ document
     document.getElementById("messageError").textContent = "";
 
     if (!name) {
-      document.getElementById("nameError").textContent = "Name is required.";
+      document.getElementById("nameError").textContent = "Nama diperlukan.";
       valid = false;
     }
 
     if (!email) {
-      document.getElementById("emailError").textContent = "Email is required.";
+      document.getElementById("emailError").textContent = "Email diperlukan.";
       valid = false;
     } else if (!validateEmail(email)) {
       document.getElementById("emailError").textContent =
-        "Invalid email format.";
+        "Email tidak valid.";
       valid = false;
     }
 
     if (!phone) {
       document.getElementById("phoneError").textContent =
-        "Phone number is required.";
+        "Nomor Telepon diperlukan.";
       valid = false;
     }
 
     if (!message) {
       document.getElementById("messageError").textContent =
-        "Message is required.";
+        "Pesan diperlukan.";
       valid = false;
     }
 
     if (valid) {
-      alert("Form is successfully validated!");
+      alert("Form sukses!");
       document.getElementById("contactForm").reset();
     }
   });
